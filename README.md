@@ -9,3 +9,5 @@ Publisher mengirim lima event `UserCreatedEventMessage` dalam satu kali jalan. S
 ### Apa arti `amqp://guest:guest@localhost:5672`?
 
 URL tersebut mengarah ke RabbitMQ message broker yang sama dengan yang digunakan oleh subscriber. Artinya, publisher dan subscriber sama-sama terhubung ke RabbitMQ di komputer lokal menggunakan protokol AMQP, dengan username `guest`, password `guest`, host `localhost`, dan port `5672`.
+
+![alt text](image.png)
