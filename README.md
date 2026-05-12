@@ -11,3 +11,6 @@ Publisher mengirim lima event `UserCreatedEventMessage` dalam satu kali jalan. S
 URL tersebut mengarah ke RabbitMQ message broker yang sama dengan yang digunakan oleh subscriber. Artinya, publisher dan subscriber sama-sama terhubung ke RabbitMQ di komputer lokal menggunakan protokol AMQP, dengan username `guest`, password `guest`, host `localhost`, dan port `5672`.
 
 ![alt text](image.png)
+## Sending and Processing Event
+Publisher mengirim lima event `UserCreatedEventMessage` ke RabbitMQ melalui queue `user_created`. Subscriber yang sudah berjalan akan menerima dan memproses setiap event tersebut.
+![alt text](image-1.png)
